@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Estruturas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        a[target=":blank"]::after{
+            content: url(imagens/bg.jpg);
+            display: inline-block;
+            margin-left: 5px;
+            color: red;
+        }
+        a[href$='.pdf']::before{
+            content: url(imagens/08_imagens_inicio.png);
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura Basica</h1>
+
+    <a href="www.google.com.br" target="_blank">Linkk externo</a>
+    <br>
+    <a href="qq.pdf">download do PDF</a>
+
+    <hr>
+
+    <input type="checkbox" name="qq" id="chk">
+    <label for="chk" span >li e concordo com o contrato</label>
+</body>
+</html>

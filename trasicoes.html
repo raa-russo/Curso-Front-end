@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasicoes</title>
+    <style>
+
+       .primeira{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+        .primeira:hover{
+            width: 200px;
+        }
+        .segunda{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            transition-property: width, height;
+            transition-duration: 1s, 3s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1), linear;
+            transition-delay: 0s, .5s;
+        }
+        .segunda:hover{
+            width: 400px;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Transicoes</h1>
+    <div class="primeira">
+        <p>Primeira</p>
+    </div>
+
+    <div class="segunda">
+        <p>Segunda</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>efeitos css</title>
+    <style>
+        #folha{
+            background: yellow;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border-radius: 100px 20px 100px 20px;
+
+            box-shadow: 10px 10px 0 -5px black;
+        }
+        #quadrado{
+            background: blue;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border-radius: 20px;
+
+            box-shadow: -10px -10px 10px 20px #999;
+        }
+        #circulo{
+            background: green;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border-radius: 100px;
+
+            box-shadow: 0 0 10px 10px black, 0 0 20px 20px red, 0 0 30px 30px yellow
+        }
+    </style>
+</head>
+<body>
+    <h1>efeitos box-shadow</h1>
+
+    <div id="folha"></div>
+    <div id="quadrado"></div>
+    <div id="circulo"></div>
+
+</body>
+</html>
