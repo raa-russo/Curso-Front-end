@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com audio</title>
+</head>
+<body>
+    <h1>Audio</h1>
+    <p>Usamos assim qdo iremos colocar apenas um link</p>
+    <audio src="./midia/mozart_trompa.mp3" controls></audio>
+    <hr>
+    <p>Usamos assim para garantir que toque em diferentes browsers, com mais links</p>
+    <p>usamos controls para ter controle sobre o audio, 
+        autoplay reproduz assim qe a pagna carrega e loop para dar loop.</p>
+    <audio controls autoplay loop>
+        <source src="./midia/mozart_trompa.mp3" type="audio/mp3">
+        <source src="./midia/mozart_trompa.ogg" type="audio/ogg">
+        <p>Seu browser nao suporta este recurso</p>
+    </audio>
+</body>
+</html>
